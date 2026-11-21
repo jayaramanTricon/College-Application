@@ -1,0 +1,101 @@
+:host {
+  display: block;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #f3f5fa;
+}
+
+.login-card {
+  box-sizing: border-box;
+  width: min(100%, 430px);
+  padding: 40px;
+  border: 0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(32, 47, 80, 0.08);
+  color: #102247;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #5064d9;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.muted {
+  margin: 0;
+  color: #788aa7;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #102247;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+  --mat-form-field-filled-container-color: #e8effb;
+  --mat-form-field-filled-container-shape: 6px;
+  --mat-form-field-filled-active-indicator-color: transparent;
+  --mat-form-field-filled-hover-active-indicator-color: transparent;
+  --mat-form-field-filled-focus-active-indicator-color: #5064d9;
+  --mat-form-field-container-height: 48px;
+  --mat-form-field-container-vertical-padding: 12px;
+}
+
+button[mat-flat-button] {
+  width: 100%;
+  height: 48px;
+  --mat-button-filled-container-color: #5064d9;
+  --mat-button-filled-label-text-color: #fff;
+  --mat-button-filled-container-shape: 6px;
+}
+
+.error {
+  margin: 0 0 16px;
+  color: #b3261e;
+}
+
+.demo-hint {
+  margin-top: 28px;
+  color: #8292ab;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.demo-hint p {
+  margin: 4px 0 0;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 32px 24px;
+  }
+}

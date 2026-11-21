@@ -1,0 +1,25 @@
+<!-- <p>login works!</p> -->
+
+<main class="login-page">
+  <mat-card class="login-card" appearance="outlined">
+    <h1 style="font-weight: normal;">Sign in to your portal</h1>
+    <p class="muted">Access your college account in one place.</p>
+    <form ><!--#loginForm="ngForm" (ngSubmit)="signIn()"-->
+      <label style="font-weight: normal;" for="username">Username</label>
+      <mat-form-field appearance="fill" subscriptSizing="dynamic">
+        <input matInput id="username" name="username" autocomplete="username" required><!--[(ngModel)]="username"-->
+      </mat-form-field>
+      <label style="font-weight: normal;" for="password">Password</label>
+      <mat-form-field appearance="fill" subscriptSizing="dynamic">
+        <input matInput id="password" name="password" type="password" autocomplete="current-password" required><!--[(ngModel)]="password" -->
+      </mat-form-field>
+      <!-- @if (error) { <p class="error" role="alert">{{ error }}</p> } -->
+      <button mat-flat-button type="submit">Sign in</button> <!--[disabled]="loginForm.invalid">-->
+    </form>
+    <div class="demo-hint">
+      <h3 style="font-weight: normal; margin-bottom: 0;">Demo accounts</h3>
+      <p style="font-weight: normal;">Admin, Student1, Student2, Instructor1 or Instructor2</p>
+      <p style="font-weight: normal;">Password: Test123</p>
+    </div>
+  </mat-card>
+</main>
