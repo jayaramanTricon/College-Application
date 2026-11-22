@@ -7,14 +7,14 @@
     <form ><!--#loginForm="ngForm" (ngSubmit)="signIn()"-->
       <label style="font-weight: normal;" for="username">Username</label>
       <mat-form-field appearance="fill" subscriptSizing="dynamic">
-        <input matInput id="username" name="username" autocomplete="username" required><!--[(ngModel)]="username"-->
+        <input matInput id="username" name="username" [(ngModel)]="username" autocomplete="username" required><!--[(ngModel)]="username"-->
       </mat-form-field>
       <label style="font-weight: normal;" for="password">Password</label>
       <mat-form-field appearance="fill" subscriptSizing="dynamic">
-        <input matInput id="password" name="password" type="password" autocomplete="current-password" required><!--[(ngModel)]="password" -->
+        <input matInput id="password" name="password" [(ngModel)]="password" type="password" autocomplete="current-password" required><!--[(ngModel)]="password" -->
       </mat-form-field>
       <!-- @if (error) { <p class="error" role="alert">{{ error }}</p> } -->
-      <button mat-flat-button type="submit">Sign in</button> <!--[disabled]="loginForm.invalid">-->
+      <button mat-flat-button href="#" (click)="onLogin()">Sign in</button> <!--type="submit" [disabled]="loginForm.invalid">-->
     </form>
     <div class="demo-hint">
       <h3 style="font-weight: normal; margin-bottom: 0;">Demo accounts</h3>
